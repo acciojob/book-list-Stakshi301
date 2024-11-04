@@ -26,12 +26,14 @@ document.querySelector('.form-group').addEventListener('submit', (e) => {
     td4.innerText = 'delete';
     td4.classList.add('delete');
     td4.style.cursor = 'pointer'; // Change cursor to indicate it's clickable
-    td4.onclick = () => {
-        tr.remove(); // Remove the entire row when delete cell is clicked
-    };
 
     // Append the delete cell to the row
     tr.appendChild(td4);
+
+    // When the delete cell is clicked, remove the corresponding row
+    td4.onclick = () => {
+        tr.remove(); // Remove the entire row when delete cell is clicked
+    };
 
     // Append the row to the book list table
     book_list.append(tr);
