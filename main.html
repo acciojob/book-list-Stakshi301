@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>My Book List</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1 class='heading'>My<span>Book</span>List</h1>
-    <form class='form-group'>
-        <label for='title'>Title</label>
-        <input id='title' name='title' type='text' placeholder='Title' required />
-        <label for='author'>Author</label>
-        <input id='author' name='author' type='text' placeholder='Author name' required />
-        <label for='isbn'>ISBN</label>
-        <input id='isbn' name='isbn' type='text' placeholder='ISBN' required /> <br><br>
-        <button id='submit' type='submit'>Add Book</button>
-    </form>
+	<!-- the entire body must be written by student -->
 
-    <table class='table table-striped'>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>ISBN#</th>
-                <!-- Added Actions column for delete button -->
-            </tr>
+	<h1 class='heading'>My<span>Book</span>List</h1>
+	<form class='form-group'>
+		<label for='title'>Title</label>
+		<input id='title' type='text' placeholder='Title' />
+		<label for='author'>Author</label>
+		<input id='author' type='text' placeholder='Author name' />
+		<label for='isbn'>ISBN</label>
+		<input id='isbn' type='text' placeholder='ISBN' /> <br>  <br>
+		<button id='submit' type='submit'>Add Book</button>
+	</form>
+
+
+	<table class='table table-striped'>
+		<thead>
 			<tr>
-				<td class="delete"></td>
+				<th>Title</th>
+				<th>Author</th>
+				<th>ISBN#</th>
 			</tr>
-        </thead>
-        <tbody id='book-list'></tbody>
-    </table>
+		</thead>
+		<tbody id='book-list'>
+			<td class="delete"></td>
+		</tbody>
+	</table>
+	
+	<script type="text/javascript" src="./script.js">
+</script>
 
-    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
