@@ -17,7 +17,7 @@
         td3.innerText = isbn;
         const td4 = document.createElement('td');
         td4.innerText = 'delete';
-        td4.classList.add('delete');
+        td4.classList.detete('delete');
         td4.onclick = () => {
             td4.parentNode.remove();
         }
